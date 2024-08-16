@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main_container{
+          border: 1px solid red;
+          height: 95vh;
+          width: 98%;
+          margin: auto;
+          display: grid;
+          grid-template-columns: 300px auto auto;
+          grid-template-rows: 50px auto 50px;
+          grid-template-areas:  "nav nav nav"
+    "main aside aside"
+    "footer footer  footer";
+
+        }
+      nav{
+        border: 1px solid black;
+        grid-area: nav;
+      }
+      aside{
+        border: 1px solid black;
+        grid-area:main ;
+      }
+      main{
+        border: 1px solid blue;
+        grid-area:aside;
+      }
+    
+      
+      footer{
+        border: 1px solid black;
+        grid-area: footer;
+      }
+      #sidebar{
+   border:  2px solid red;
+      }
+      .list{
+border: 1px solid green;
+list-style: none;
+      }
+      .button{
+        border: 4px solid yellow;
+      }
+    </style>
+</head>
+<body>
+    <div id="main_container">
+        <nav>Navbar</nav>
+        <aside id="sidebar"></aside>
+        <main id="main">Main content</main>
+        <footer>Footer</footer>
+    </div>
+    <script src="./index.js"></script>
+    <script src="./dashboard.js"></script>
+<script src="./contact.js"></script>
+<script src="./help.js"></script>
+<script src="./main.js"></script>
+<script src="./profile.js"></script>
+<script src="./aboutus.js"></script>
+sc
+
+</body>
+
+</html>
