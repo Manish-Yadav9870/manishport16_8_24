@@ -33,9 +33,14 @@ button.textContent=ele.label;
 button.addEventListener("click",()=>handlesidebarBtnClick(btn.key))
 
 div.appendChild(button)
+
 dashboard.appendChild(div);
-replacechildElement(dashboard)
     });
-    
+ 
+    replacechildElement(dashboard)
    
 };
+window.onload=()=>{
+    handlesidebarBtnClick("dashboard");
+}
+

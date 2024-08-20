@@ -50,12 +50,15 @@ function displaysidebarbuttonlist(){
     sidebar.append(ul);
 }
 displaysidebarbuttonlist();
+function urlchange(){
+window.location.replace();
+}
 function handlesidebarBtnClick(key){
     const pageObj={
         dashboard: displaydashboard,
         profile: displayprofile,
         aboutus: displayaboutus,
-        contactus: displaycontact,
+        contactus: displaycontactdata,
         help: displayhelp,
     }
 return pageObj[key]();
